@@ -1,0 +1,77 @@
+/* General styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f8ff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    padding: 20px;
+    color: #333;
+}
+
+/* Title */
+h1 {
+    color: #7f9a96;
+}
+
+/* Habit container */
+.habit-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Habit styling */
+.habit {
+    background-color: #d8e2dc;
+    border-radius: 15px;
+    padding: 20px;
+    width: 300px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.habit h2 {
+    color: #a7bed3;
+}
+
+.habit button {
+    background-color: #a7bed3;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    color: white;
+    transition: background-color 0.3s ease;
+}
+
+.habit button:hover {
+    background-color: #92afd0;
+}
+
+.habit p {
+    font-size: 18px;
+}
+
+/* Popup for milestones */
+.popup {
+    background-color: #ffd166;
+    color: #333;
+    border-radius: 20px;
+    padding: 15px;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    display: none;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    animation: fade-in-out 2s ease;
+}
+
+@keyframes fade-in-out {
+    0% { opacity: 0; transform: translateY(-10px); }
+    50% { opacity: 1; transform: translateY(0); }
+    100% { opacity: 0; transform: translateY(-10px); }
+}
