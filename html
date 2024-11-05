@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pastel Habit Tracker</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Habit Tracker</h1>
+    <div class="habit-container">
+        <div class="habit" id="habit1">
+            <h2>Drink Water</h2>
+            <button onclick="trackHabit('habit1')">Tick off</button>
+            <p>Streak: <span class="counter" id="counter-habit1">0</span></p>
+        </div>
+        <div class="habit" id="habit2">
+            <h2>Exercise</h2>
+            <button onclick="trackHabit('habit2')">Tick off</button>
+            <p>Streak: <span class="counter" id="counter-habit2">0</span></p>
+        </div>
+    </div>
+    <div class="popup" id="popup">
+        <p>🎉 Milestone Reached! 🎉</p>
+        <span id="milestone-count"></span>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
